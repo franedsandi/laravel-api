@@ -16,4 +16,5 @@ use App\Http\Controllers\Api\PageController;
 */
 
 Route::get('/Projects', [PageController::class,'index']);
+Route::get('/Projects/{slug}', [PageController::class,'getProjectBySlug']);
 
